@@ -54,6 +54,9 @@
                         reposElement.innerText = json.public_repos;
                         linkElement.href = json.html_url;
                     })
+                    .catch(function(erro) {
+            alert("Ocorreu um erro ao buscar as informações tente novamente mais tarde")
+        })
                 })
     </script>
 </body>
